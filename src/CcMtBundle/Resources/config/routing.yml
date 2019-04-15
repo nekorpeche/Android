@@ -1,0 +1,15 @@
+cc_mt_homepage:
+    path:     /
+    defaults: { _controller: CcMtBundle:Default:index }
+    
+cc_mt_visiteurs:
+    path: /visiteurs
+    defaults: { _controller: CcMtBundle:Default:getLesVisiteurs}
+    
+cc_mt_visiteurs_mat:
+    path: /visiteurs/{matricule}
+    defaults: {_controller: CcMtBundle:Default:getVisiteurNom}
+    
+cc_mt_connexion:
+    path: /visiteurs/{login}/{mdp}
+    defaults: { _controller: CcMtBundle:Default:getUnVisiteur}
